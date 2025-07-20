@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CalcX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="container">
+    <form class="calculator" name="calc">
+      <!--     <input type="text" readonly class="value" name="txt"> -->
+      <textarea name="txt" readonly class="value" rows="3"></textarea>
+      <span class="num clear" onclick="calc.txt.value = ''">c</span>
+      <span class="num" onclick="document.calc.txt.value +='/'">/</span>
+      <span class="num" onclick="document.calc.txt.value +='*'">*</span>
+      <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+      <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+      <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+      <span class="num" onclick="document.calc.txt.value +='-'">-</span>
+      <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+      <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+      <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+      <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+      <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+      <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+      <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+      <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+      <span class="num" onclick="document.calc.txt.value +='00'">00</span>
+      <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+      <span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
+    </form>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script>
+  <script src="muntazirali.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <div class="sidebar">
+    <a href="https://github.com/iammuntazirali" target="_blank" title="GitHub"> <i data-feather="github"></i> </a>
+    <a href="https://www.youtube.com/@Muntazir-Ali" target="_blank" title="YouTube"> <i data-feather="youtube"></i> </a>
+    <a href="https://www.instagram.com/iammuntazirali" target="_blank" title="Instagram"> <i data-feather="instagram"></i> </a>
+    <a href="https://x.com/iammuntazirali" target="_blank" title="X"> <i class="fa-brands fa-x-twitter"></i> </a>
+    <a href="https://www.linkedin.com/in/iammuntazirali" target="_blank" title="LinkedIn"> <i data-feather="linkedin"></i> </a>
+  </div>
+  
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>
