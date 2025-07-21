@@ -132,3 +132,9 @@ body .container .calculator span:active {
 .sidebar a:hover {
   color: #070707;
 }
+
+.sidebar .fa-x-twitter {
+  font-size: 1.5rem !important;
+  line-height: 1;
+}
+
