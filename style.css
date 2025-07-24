@@ -111,7 +111,7 @@ body .container .calculator span:active {
   position: fixed;
   top: 0;
   left: 0;
-  width: 160px;
+  width: 80px;
   height: 100%;
   padding: 250px 10px;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
